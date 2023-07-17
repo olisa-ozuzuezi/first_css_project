@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/*header begins here*/
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #00008b;
+    color: #ffffff;
+    height: 70px;
+    width: 100%;
+}
+.site-title{
+    transition: 0.4s;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.site-title:hover{
+    color: #daa520;
+}
+.site-menu{
+    display: flex;
+    align-items: center;
+}
+
+.site-menu-list{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.site-menu-list li{
+    list-style-type: none;
+}
+.site-menu-list li a{
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s infinite;
+}
+.site-menu-list li a:hover{
+    color: #daa520;
+    text-decoration: underline;
+}
+#menu-icon,.menu-checkbox{
+    display: none;
+}
+/*header ends here*/
+
+/*body style starts*/
+.me-2{
+    background: darkblue;
+    color: #ffffff;
+}
+.me-2::first-letter{
+    font-size: 30px;
+}
+.me-3{
+    background: #daa520;
+}
+.me-4{
+    background: #000000;
+    color: #ffffff;
+}
+.contacts{
+    color: #daa520;
+}
+.more-services{
+    background:goldenrod;
+    color: #000000;
+    margin-left: 20px;
+}
+.more,.more-2{
+    background:#daa520;
+}
+.serve,.serve-2{
+    background: #000000;
+    color: #ffffff;
+}
+/*div starts here*/
+.about{
+    background-image: url(/images/techimage.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    height: 500px;
+    text-align: center;
+    text-shadow: 10px 10px 10px black;
+}
+.about-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: inherit;
+    background-color: rgba(0, 0, 0,0.7);
+    gap: 20px;
+}
+.about-h1{
+    transition: 0.7s;
+}
+.about-h1::after{
+    content: "";
+    animation: ab 15s infinite linear;
+}
+@keyframes ab{
+    0%{
+        content: "My Skills";
+        color: #daa520;
+    }
+    25%{
+        content: "HTML";
+    }
+    50%{
+        content: "CSS";
+    }
+    75%{
+        content: "IT SOLUTIONS";
+    }
+    100%{
+        content: "DEBUGGING & WEBSITE UPGRADE";
+    }
+}
+.name{
+    text-transform: capitalize;
+}
+.me{
+    font-size: 40px;
+}
+/*div ends here*/
+/*div2 starts here*/
+.about-1{
+    text-align: center;
+    display: flex;
+    padding: auto;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    background-color: #00008b;
+    color: #ffffff;
+    background:linear-gradient(rgba(218, 165, 32), rgba(0, 0, 0))
+}
+.about-2,.about-3{
+    height: 400px;
+    width: 50%;
+}
+.about-2{
+    background: url("/images/my\ pics.jpg");
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width:800px) {
+    .about-2,.about-3{
+        height: 400px;
+        width: 100%;
+    }
+    .about-1{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.about-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.h1{
+    text-align: center;
+    color:white;
+    text-transform: capitalize;
+}
+.parent-1{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/*div2 ends here*/
+/*div3 strats here*/
+.head{
+    color: white;
+}
+.services-1{
+    text-align: center !important;
+    flex-wrap: wrap;
+    background: darkblue;
+    color: #ffffff;
+}
+.tech{
+    text-align: center;
+}
+
+.tech-1{
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
+.stack li{
+    list-style-type: none;
+}
+.input{
+    text-align: center;
+    background: #daa520;
+    padding: 20px;
+}
+.input-contact{
+    height: 30px;
+    width: 300px;
+    border: none;
+    border-bottom: solid 3px black;
+}
+textarea{
+    height: 120px;
+    width: 300px;
+    border: none;
+    border-bottom: solid 3px black;
+}
+.btn-contact{
+    height: 40px;
+    width: 100px;
+    font-size: 20px;
+}
+/*body ends here*/
+
+
+/*footer starts here*/
+footer{
+    height: auto;
+    width: 100%;
+    background: #000000;
+    color: #ffffff;
+}
+.footer-1{
+    display: flex;
+    justify-content: space-evenly;
+    height: auto;
+    padding-top: 10px;
+}
+.footer-1-1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 120px;
+}
+.footer-1-2{
+    height: 120px;
+}
+.footer-2{
+    display: flex;
+    justify-content: center;
+    background: rgb(92, 91, 91);
+    height: 30px;
+    align-items: center;
+}
+#email{
+    height: 30px;
+   width: 250px;
+}
+.btn-newsletter{
+    height: 35px;
+    width: 60px;
+    font-size: 15px;
+}
+.fa{
+    transform: scale(2);
+    border-radius: 50%;
+}
+.fa-facebook-official{
+    background-color: #ffffff;
+    color: #0000ff;
+}
+.fa-whatsapp{
+    background: #008000;
+    color: #ffffff;
+    margin-left: 20px;
+  
+}
+/*footer ends here*/
+
+
+/*responsove design media query starts here*/
+@media screen and (max-width:800px) {
+    .site-menu-list{
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 70px;
+        background: black;
+        right: -1200px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        justify-content: center;
+        transition: 0.7s;
+        z-index: 4;
+    }
+    #menu-icon,.menu-checkbox{
+        display:block;
+    }
+    .menu-checkbox{
+        transform: scale(2);
+        position: absolute;
+        z-index: 5;
+        opacity: 0;
+    }
+    .menu-checkbox:checked ~ .site-menu-list{
+        right: 0;
+    }
+    .footer-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+/*responsove design media query ends here*/
